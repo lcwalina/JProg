@@ -1,9 +1,9 @@
 # Języki Programowania
-```
+
 Wykład: [dr Stefan Sokołowski](http://sigma.ug.edu.pl/~stefan/Dydaktyka/JezProg/)
 
 Laboratorium: [dr Włodzimierz Bzyl](http://wbzyl.inf.ug.edu.pl/c/)
-```
+
 1. [Laboratorium 1](lab1)
   * [x] [zadanie 1](lab1/zad1.c)
   * [x] [zadanie 2](lab1/zad2.c)
