@@ -21,9 +21,9 @@ Laboratorium: [dr Włodzimierz Bzyl](http://wbzyl.inf.ug.edu.pl/c)
 
 3. [Laboratorium 3](lab3)
   * [x] [zadanie 1](lab3/zad1.c)
-  * [ ] [zadanie 2](lab3/zad2.c)
-  * [ ] [zadanie 3](lab3/zad3.c)
-  * [ ] [zadanie 4](lab3/zad4.c)
+  * [x] [zadanie 2](lab3/zad2.c)
+  * [x] [zadanie 3](lab3/zad3.c)
+  * [x] [zadanie 4](lab3/zad4.c)
 
 
 |        TYP|             MINIMUM|            MAKSIMUM|      "ZIARNO"|     "PRECYZJA"|WE/WY|
