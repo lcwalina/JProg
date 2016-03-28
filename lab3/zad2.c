@@ -1,17 +1,12 @@
+// dla liczb całkowitych
 #include <stdio.h>
 
 int main()
 {
-  short a=0.1,a2=0.1;
-  int b=0.1,b2=0.1; //analogicznie do powyższego
-  long  c=0.1,c2=0.1; // --||--
-  long long d=0.1, d2=0.1; // --||--
-  float e=0.0000001, e2=0.0000001;
-  double f;
-  long double g;
-  printf("%i\n", a+a2);
-  printf("%f\n", e+e2);
-
+  short Short=1/2;
+  float Float=0.000000001+0.000000001;
+  printf("%i\n", Short); // drukuje "0",  wszystkie typy całkowite - analogicznie
+  printf("%f\n", Float); // drukuje "0", typy zmiennoprzecinkowe analogicznie - powyżej precyzji danego typu
   return 0;
 
 }
