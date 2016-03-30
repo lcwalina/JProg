@@ -2,7 +2,6 @@
 #include<math.h>
 #include<ctype.h>
 #include<stdlib.h>
-//#include<complex.h>
 
 /****************************************************************/
 // DEFINICJA TYPU LICZB ZESPOLONYCH:
