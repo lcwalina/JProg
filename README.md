@@ -27,7 +27,7 @@ Laboratorium: [dr Włodzimierz Bzyl](http://wbzyl.inf.ug.edu.pl/c)
 
 4. [Laboratorium 4](lab4)
   * [x] [zadanie 1](lab4/zad1.c)
-  * [x] [zadanie 1 with <complex.h> lib](lab4/zad1_with_complexh.c)
+  * [x] [zadanie 1 with 'complex.h' lib](lab4/zad1_with_complexh.c)
   * [x] [zadanie 2](lab4/zad2.c)
 
 5. [Laboratorium 5](lab5)
