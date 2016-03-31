@@ -31,7 +31,7 @@ Laboratorium: [dr Włodzimierz Bzyl](http://wbzyl.inf.ug.edu.pl/c)
   * [x] [zadanie 2](lab4/zad2.c)
 
 5. [Laboratorium 5](lab5)
-  * [ ] [zadanie 1](lab5/zad1.c)
+  * [x] [zadanie 1](lab5/zad1.c)
   * [ ] [zadanie 2](lab5/zad2.c)
 
 6. [Laboratorium 6](lab6)
@@ -39,12 +39,12 @@ Laboratorium: [dr Włodzimierz Bzyl](http://wbzyl.inf.ug.edu.pl/c)
   * [ ] [zadanie 2](lab6/zad2.c)
   * [ ] [zadanie 3](lab6/zad3.c)
 
-  |        TYP|             MINIMUM|            MAKSIMUM|      "ZIARNO"|     "PRECYZJA"|WE/WY|ROZMIAR|
-  |-----------|--------------------|--------------------|--------------|---------------|-----|-------|
-  |      short|              -32768|               32767|              |               | %i  |      2|
-  |        int|         -2147483648|          2147483647|              |               | %i  |      4|
-  |       long|-9223372036854775808| 9223372036854775807|              |               | %li |      8|
-  |  long long|-9223372036854775808| 9223372036854775807|              |               | %lli|      8|
-  |      float|        1.175494e-38|        3.402823e+38| 1.192093e-07 |              6| %e  |      4|
-  |     double|       2.225074e-308|       1.797693e+308| 2.220446e-16 |             15| %le |      8|
-  |long double|      3.362103e-4932|      1.189731e+4932| 1.084202e-19 |             18| %Le |     16|
+|        TYP|             MINIMUM|            MAKSIMUM|      "ZIARNO"|"PRECYZJA"|WE/WY|ROZMIAR|
+|-----------|--------------------|--------------------|--------------|----------|-----|-------|
+|      short|              -32768|               32767|              |          | %i  |      2|
+|        int|         -2147483648|          2147483647|              |          | %i  |      4|
+|       long|-9223372036854775808| 9223372036854775807|              |          | %li |      8|
+|  long long|-9223372036854775808| 9223372036854775807|              |          | %lli|      8|
+|      float|        1.175494e-38|        3.402823e+38| 1.192093e-07 |         6| %e  |      4|
+|     double|       2.225074e-308|       1.797693e+308| 2.220446e-16 |        15| %le |      8|
+|long double|      3.362103e-4932|      1.189731e+4932| 1.084202e-19 |        18| %Le |     16|
