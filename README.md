@@ -31,13 +31,13 @@ Laboratorium: [dr Włodzimierz Bzyl](http://wbzyl.inf.ug.edu.pl/c)
   * [x] [zadanie 2](lab4/zad2.c)
 
 5. [Laboratorium 5](lab5)
-  * [ ] [zadaie](lab5/zad1.c)
-  * [ ] [zadaie](lab5/zad2.c)
+  * [ ] [zadanie 1](lab5/zad1.c)
+  * [ ] [zadanie 2](lab5/zad2.c)
 
 6. [Laboratorium 6](lab6)
-  * [ ] [zadaie](lab6/zad1.c)
-  * [ ] [zadaie](lab6/zad2.c)
-  * [ ] [zadaie](lab6/zad3.c)
+  * [ ] [zadanie 1](lab6/zad1.c)
+  * [ ] [zadanie 2](lab6/zad2.c)
+  * [ ] [zadanie 3](lab6/zad3.c)
 
   |        TYP|             MINIMUM|            MAKSIMUM|      "ZIARNO"|     "PRECYZJA"|WE/WY|ROZMIAR|
   |-----------|--------------------|--------------------|--------------|---------------|-----|-------|
