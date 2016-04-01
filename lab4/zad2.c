@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <complex.h>
 #include <math.h>
+
 int main() {
 
     //tożsamośc Eulera za pomocą funkcji cpow:
