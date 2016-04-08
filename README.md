@@ -32,10 +32,10 @@ Laboratorium: [dr Włodzimierz Bzyl](http://wbzyl.inf.ug.edu.pl/c)
 
 5. [Laboratorium 5](lab5)
   * [x] [zadanie 1](lab5/zad1.c)
-  * [ ] [zadanie 2](lab5/zad2.c)
+  * [x] [zadanie 2](lab5/zad2.c)
 
 6. [Laboratorium 6](lab6)
-  * [ ] [zadanie 1](lab6/zad1.c)
+  * [x] [zadanie 1](lab6/zad1.c)
   * [ ] [zadanie 2](lab6/zad2.c)
   * [ ] [zadanie 3](lab6/zad3.c)
 
