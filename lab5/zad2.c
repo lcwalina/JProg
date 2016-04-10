@@ -5,7 +5,7 @@
 
 #define IMIE_MAX 10
 #define NAZW_MAX 15
-#define IL_OSOB 10000
+#define IL_OSOB 12
 
 typedef struct {
   char imie[IMIE_MAX+1];
@@ -18,7 +18,7 @@ osoba spis[IL_OSOB];
 //=======================================================
 
 void  utworz_spis(void) {
-  FILE* baza =fopen("/home/pracinf/stefan/public_html/Dydaktyka/JezProg/Slajdy/Labs05/baza_danych","r");
+  FILE* baza =fopen("baza.txt","r");
   if (baza == NULL) printf("\n ZLE\n\n");
   for (int i=0; i<IL_OSOB; i++) {
     fscanf(baza, "%s", spis[i].imie);
@@ -42,34 +42,37 @@ void  sortuj_spis(void) {
   */
   FILE* baza2 =fopen("posortowane.txt", "w");
   qsort(spis, IL_OSOB, sizeof(osoba), compare);
+    int i;
+    for (i = 0; i < IL_OSOB; i++) {
+	       fprintf(baza2, "%15s	", spis[i].imie);
+	       fprintf(baza2, "%15s	", spis[i].nazwisko);
+	       fprintf(baza2, "%15i\n", spis[i].pensja);
+    }
   fclose(baza2);
 }
 //=======================================================
 
-int  znajdz_nazwisko (
-  char na[NAZW_MAX+1],
-  char im[IMIE_MAX+1], int *p
-) {
+int  znajdz_nazwisko (char na[NAZW_MAX+1],char im[IMIE_MAX+1], int *p) {
   /* do danego nazwiska  na  znajduje w spisie
      imie  im  oraz pensje  p
      jesli znajdzie, to zwraca 1, jesli nie, to 0
   */
-       int i=0;
-       while(i<IL_OSOB && strcmp(na, spis[i].nazwisko) != 0)
-         i++;
-       if(i == IL_OSOB) return 0;
-       else if(strcmp(na, spis[i].nazwisko)==0)
-         strcpy(im, spis[i].imie);
-       *p = spis[i].pensja;
-       return 1;
+  int a = bsearch(&na, spis, IL_OSOB, sizeof(osoba), compare);
+   if (a = NULL)
+    return 0;
+   else {
+    osoba *osoba_a;
+    osoba_a = (osoba *) a;
+    strcpy(im, spis[a].imie);
+    *p = spis[a].pensja;
+    return 1;
+   }
 }
+
 
 //=======================================================
 
-int  znajdz_imie (
-  char im[NAZW_MAX+1],
-  char na[IMIE_MAX+1], int *p
-) {
+int  znajdz_imie (char im[NAZW_MAX+1], char na[IMIE_MAX+1], int *p) {
   /* do danego imienia  im  znajduje w spisie
      nazwisko  na  oraz pensje  p
      jesli znajdzie, to zwraca 1, jesli nie, to 0
@@ -77,7 +80,7 @@ int  znajdz_imie (
   int i;
   for(i=0; i<IL_OSOB; i++)
   {
-    if(strcmp(spis[i].imie,im) == 0){
+      if(strcmp(spis[i].imie,im) == 0){
       strcpy(na,spis[i].nazwisko);
       *p = spis[i].pensja;
       return 1;
