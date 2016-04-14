@@ -57,16 +57,15 @@ int  znajdz_nazwisko (char na[NAZW_MAX+1],char im[IMIE_MAX+1], int *p) {
      imie  im  oraz pensje  p
      jesli znajdzie, to zwraca 1, jesli nie, to 0
   */
-  int a = bsearch(&na, spis, IL_OSOB, sizeof(osoba), compare);
-   if (a = NULL)
-    return 0;
-   else {
-    osoba *osoba_a;
-    osoba_a = (osoba *) a;
-    strcpy(im, spis[a].imie);
-    *p = spis[a].pensja;
-    return 1;
-   }
+  int i;
+  for(i=0; i<IL_OSOB; i++)
+  {
+      if(strcmp(spis[i].nazwisko,na) == 0){
+      strcpy(im,spis[i].imie);
+      *p = spis[i].pensja;
+      return 1;
+    }
+  }
 }
 
 
