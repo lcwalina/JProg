@@ -5,7 +5,7 @@
 
 #define IMIE_MAX 10
 #define NAZW_MAX 15
-#define IL_OSOB 12
+#define IL_OSOB 15
 
 typedef struct {
   char imie[IMIE_MAX+1];
@@ -17,7 +17,7 @@ osoba spis[IL_OSOB];
 
 //=======================================================
 
-void  utworz_spis(void) {
+void utworz_spis(void) {
   FILE* baza =fopen("baza.txt","r");
   if (baza == NULL) printf("\n ZLE\n\n");
   for (int i=0; i<IL_OSOB; i++) {
@@ -33,7 +33,12 @@ void  utworz_spis(void) {
 int compare(const void * _s1, const void * _s2){
   osoba *s1 = (osoba *) _s1;
   osoba *s2 = (osoba *) _s2;
-  return (strcmp(s1-> nazwisko, s2-> nazwisko));
+
+
+  if(strcmp(s1-> nazwisko, s2-> nazwisko)==0)
+  return strcmp(s1-> imie, s2-> imie);
+  else
+  return strcmp(s1-> nazwisko, s2-> nazwisko);
 }
 
 void  sortuj_spis(void) {
@@ -92,7 +97,7 @@ return 0;
 
 //=======================================================
 
-int main () {
+int main (int argc, char *argv[]) {
   char odpowiedz, im[NAZW_MAX+1], na[IMIE_MAX+1];
   int p;
 

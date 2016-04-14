@@ -1,5 +1,8 @@
            Adam	        Adamiak	           1000
      Bronisław	     Broniewski	            500
+        Cyprian	     Broniewski	            100
+          Kamil	     Broniewski	            300
+         Stefan	     Broniewski	            800
          Camila	       Carramba	            900
          Danuta	          Danik	            812
            Igor	          Gogol	           4567
