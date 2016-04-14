@@ -66,6 +66,7 @@ int  znajdz_nazwisko (char na[NAZW_MAX+1],char im[IMIE_MAX+1], int *p) {
       return 1;
     }
   }
+  return 0;
 }
 
 
