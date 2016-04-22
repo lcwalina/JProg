@@ -1,8 +1,7 @@
 #include <stdio.h>
 #include <complex.h>
 #include <math.h>
-#define M_E 2.71828182845904523536
-#define M_PI 3.14159265358979323846
+
 int main() {
 
     //tożsamośc Eulera za pomocą funkcji cpow:
@@ -14,12 +13,12 @@ int main() {
     //e^ri = cos(r) + sin(r)*i
     int r=2;
     result= cos(r) + sin(r)*imag_unit;
-    printf("e^%di=%.2f%+.2fi\n", r, creal(result),cimag(result)); // ok - https://www.wolframalpha.com/input/?i=e^%282i%29
+    printf("e^%di=%lf%+lfi\n", r, creal(result),cimag(result)); // ok - https://www.wolframalpha.com/input/?i=e^%282i%29
 
     //podnoszenie do potegi zespolonej
     double complex z = 2 + 2 * I;
     result= cpow(M_E,z);
-    printf("e^(%.2f%+.2fi) = %.2f%+.2fi\n\n",creal(z), cimag(z), creal(result),cimag(result) ); // ok - https://www.wolframalpha.com/input/?i=e^%282%2B2i%29
+    printf("e^(%lf%+lfi) = %lf%+lfi\n\n",creal(z), cimag(z), creal(result),cimag(result) ); // ok - https://www.wolframalpha.com/input/?i=e^%282%2B2i%29
 
     return 0;
 }

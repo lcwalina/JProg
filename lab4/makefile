@@ -4,7 +4,7 @@ programs = $(basename $(sources))
 objects = $(addsuffix .o, $(programs))
 
 CC = gcc
-CFLAGS = -c -Wall -std=c11
-LDLIBS = -lm
+CFLAGS = -Wall -std=c11
+LDLIBS = -lm -D_GNU_SOURCE
 
 all : $(programs)
