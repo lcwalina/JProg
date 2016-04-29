@@ -3,7 +3,8 @@ sources = zad1.c zad2.c
 programs = $(basename $(sources))
 objects = $(addsuffix .o, $(programs))
 
-CFLAGS = -Wall -std=c99
-LDLIBS = -lm
+CC = gcc
+CFLAGS = -Wall -std=c11
+LDLIBS = -lm -D_GNU_SOURCE
 
 all : $(programs)
