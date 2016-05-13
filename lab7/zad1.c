@@ -1,19 +1,11 @@
 #include <stdio.h>
 
-int main (int count, char* arg[ ]) {
-
+int main(int argc, char *argv[])
+{
   int i;
-
-  for(i=count; i>1; i--){
-
-    if(i==count){
-      printf("%s", arg[i-1]);
-    }
-
-    else
-      printf(" %s", arg[i-1]);
-
+  for(i=argc-1; i>=1; i--)
+  {
+    printf ("%s ", argv[i]);
   }
-
-printf("\n");
+  printf("\n");
 }

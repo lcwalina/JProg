@@ -41,11 +41,11 @@ int compare(const void * _s1, const void * _s2){
   return strcmp(s1-> nazwisko, s2-> nazwisko);
 }
 
-void  sortuj_spis(char *write) {
+void  sortuj_spis() {
   /* sortuje  spis  alfabetycznie wg nazwisk,
      a w przypadku rownych nazwisk wg imion
   */
-  FILE* baza2 =fopen(write, "w");
+  FILE* baza2 =fopen("posortowane.txt", "w");
   qsort(spis, IL_OSOB, sizeof(osoba), compare);
     int i;
     for (i = 0; i < IL_OSOB; i++) {
@@ -101,7 +101,7 @@ int main (int argc, char *argv[]) {
   char odpowiedz, im[NAZW_MAX+1], na[IMIE_MAX+1];
   int p;
 
-  utworz_spis(argv[1]); sortuj_spis(argv[2]);
+  utworz_spis(argv[1]); sortuj_spis();
 
   do {
     printf(

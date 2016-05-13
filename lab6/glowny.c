@@ -1,44 +1,5 @@
-/*=====================================================
- * Funkcja
- *   Boolean form0(drzewo* drz)
- * wczytuje formule logiczna i produkuje drzewo tej formuly.
- *
- * Formula na wejsciu musi byc zgodna z gramatyka:
- *
- *   form0  ::=  form1 { '=' form1 }*
- *   form1  ::=  form2  |  form2 '>' form1
- *   form2  ::=  form3 { 'V' form3 }*
- *   form3  ::=  form4 { '&' form4 }*
- *   form4  ::=  form5 | '~' form4
- *   form5  ::=  zm | st | '(' from0 ')'
- *
- * np.:  (p&q > r) = (p > (q > r)) .
- *
- * Zmienne logiczne: pojedyncze male litery.
- * Stale logiczne: znaki '0' i '1'.
- *
- * Operatory wg pierwszenstw wykonywania (od najsilniejszego do
- * najslabszego):
- *   ~  (negacja),
- *   &  (koniunkcja -- wiaze do lewej),
- *   V  (alternatywa -- wiaze do lewej),
- *   >  (implikacja -- wiaze do prawej),
- *   =  (rownowaznosc -- wiaze do lewej).
- * Oczywiscie mozna zmienic kolejnosc wykonywania przez zastosowanie
- * nawiasow.
- *
- * Ponizej nadane sa poczatkowe wartosci zmiennym.  Oczywiscie mozna
- * je poprawic zaleznie od wlasnych potrzeb.
- *
- *
- * Program nalezy kompilowac komenda
- *   gcc -Wall glowny.c funkcje.c -std=gnu99
- * i wywolywac komenda
- *   ./a.out
- *
- *=====================================================
-*/
 #include "funkcje.h"
+
 int main(int argnum, char* arg[])
 {
   drzewo drz;
