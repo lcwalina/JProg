@@ -48,6 +48,11 @@ Laboratorium: [dr Włodzimierz Bzyl](http://wbzyl.inf.ug.edu.pl/c)
   * [x] [zadanie 3](lab8/zad3.c)
   * [x] [zadanie 4](lab8/zad4.c)
 
+9. [Laboratorium 9](lab9)
+  * [x] [zadanie 1](lab9/zad1.c)
+  * [x] [zadanie 2](lab9/zad2.c)
+  * [x] [zadanie 3](lab9/zad3.c)
+
 
 |        TYP|             MINIMUM|            MAKSIMUM|      "ZIARNO"|"PRECYZJA"|WE/WY|ROZMIAR|
 |-----------|--------------------|--------------------|--------------|----------|-----|-------|
